@@ -4,21 +4,45 @@
     margin: 0;
 }
 
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
+body{
+    background-color: grey;
 }
 
-td, th{
-    border: 1px solid black;
-    padding: 5px;
+p{
+    color: black;
 }
 
-th{
-    font-weight: bold;
-    text-transform: uppercase;
+h1{
+    color: black;
+    text-align: center;
 }
 
-td{
-    font-size: 12px;
+#search{
+    align-items: center;
+    position: relative; left: -300px; top: 50px;
+}
+
+#clear{
+    align-items: center;
+    position: relative; left: -140px; top: 50px;
+}
+
+#graphicm2{
+    align-items: center;
+    position: relative; left: 500px; top: -300px;
+}
+
+#graphicBanheiros{
+    align-items: center;
+    position: relative; left: 700px; top: -300px;
+}
+
+#graphicQuartos{
+    align-items: center;
+    position: relative; left: 293px; top: -50px;
+}
+
+#graphicVagas{
+    align-items: center;
+    position: relative; left: 495px; top: -50px;
 }

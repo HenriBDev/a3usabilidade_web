@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <link rel="stylesheet", href="frontA3.css">
+        <h1>Informações imobiliários de São Paulo - 2021/2022</h1>
+
+        <label for="sellORrent">Casas para:
+            <select name="type" id="type">
+                <option value="blank"></option>
+                <option value="sell">Vender</option>
+                <option value="rent">Alugar</option>
+            </select>
+        </label>
+        
+        <p id="price">A partir de quantos reais deseja buscar?</p>
+        <input type="text" name="preco">
+
+        <p id="size">Tamanho em m²:</p>
+        <input type="radio" name="tamanho">mais de 150m² <input type="radio" name="tamanho">de 70m² a 150m² <input type="radio" name="tamanho">menos de 70m²
+        
+        <p id="bathrooms">Qtd. de Banheiros:</p>
+        <input type="radio" name="banheiro"> 1 <input type="radio" name="banheiro"> 2 <input type="radio" name="banheiro"> 3 <input type="radio" name="banheiro"> 4 ou mais
+
+        <p id="bedrooms">Qtd. de Quartos</p>
+        <input type="radio" name="quarto"> 1 <input type="radio" name="quarto"> 2<input type="radio" name="quarto"> 3<input type="radio" name="quarto"> 4 ou mais
+
+        <p id="vagas">Qtd. de Vagas</p>
+        <input type="radio" name="vaga" id="vaga"> 1 <input type="radio" name="vaga" id="vaga"> 2 <input type="radio" name="vaga" id="vaga"> 3 <input type="radio" name="vaga" id="vaga"> 4 ou mais
+
+        <button type="button" id="clear">Limpar filtros</button>
+        <button type="button" id="search">Buscar</button>
+
+        <div id="graphic">
+            <svg width="100" height="100" id="graphicm2">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="green" />
+            </svg>
+            <svg width="100" height="100" id="graphicBanheiros">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="white" />
+            </svg>
+            <svg width="100" height="100" id="graphicQuartos">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="blue" />
+            </svg>
+            <svg width="100" height="100" id="graphicVagas">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="yellow" />
+            </svg>
+        </div>
     <script type="module" src="js/lerDados.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </body>
