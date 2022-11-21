@@ -27,22 +27,65 @@ h1{
     position: relative; left: -140px; top: 50px;
 }
 
-#graphicm2{
-    align-items: center;
-    position: relative; left: 500px; top: -300px;
+main section.graphicD3{
+    display:table;
+    width: 40%;
+    margin-top: 0px;
+    padding: 0px 0 0 0; /*set left/right padding according to needs*/
+    box-sizing: border-box;
 }
 
-#graphicBanheiros{
+#logradouroTitulo{
     align-items: center;
-    position: relative; left: 700px; top: -300px;
+    position: relative; left: 150px; top: -198px;
 }
 
-#graphicQuartos{
+#logradouro1{
     align-items: center;
-    position: relative; left: 293px; top: -50px;
+    position: relative; left: 150px; top: -198px;
 }
 
-#graphicVagas{
+#logradouro2{
     align-items: center;
-    position: relative; left: 495px; top: -50px;
+    position: relative; left: 150px; top: -198px;
+}
+
+#logradouro3{
+    align-items: center;
+    position: relative; left: 150px; top: -198px;
+}
+
+#logradouro4{
+    align-items: center;
+    position: relative; left: 150px; top: -198px;
+}
+
+#logradouro5{
+    align-items: center;
+    position: relative; left: 150px; top: -198px;
+}
+
+#logradouro6{
+    align-items: center;
+    position: relative; left: 150px; top: -198px;
+}
+
+#logradouro7{
+    align-items: center;
+    position: relative; left: 150px; top: -198px;
+}
+
+#logradouro8{
+    align-items: center;
+    position: relative; left: 150px; top: -198px;
+}
+
+#logradouro9{
+    align-items: center;
+    position: relative; left: 150px; top: -198px;
+}
+
+#logradouro10{
+    align-items: center;
+    position: relative; left: 150px; top: -198px;
 }

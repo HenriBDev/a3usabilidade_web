@@ -117,33 +117,33 @@ httpRequest.onreadystatechange = function()
 
         dadosFiltrados.unshift(dados.columns)
         
-        let csvContent = "data:text/csv;charset=UTF-8,%EF%BB%BF" + encodeURIComponent(dadosFiltrados.map(e => Object.values(e).join(";")).join("\n"));
-        var aLink = document.createElement('a');
-        aLink.href = csvContent;
-        aLink.click();
+        // let csvContent = "data:text/csv;charset=UTF-8,%EF%BB%BF" + encodeURIComponent(dadosFiltrados.map(e => Object.values(e).join(";")).join("\n"));
+        // var aLink = document.createElement('a');
+        // aLink.href = csvContent;
+        // aLink.click();
 
-        const dadosParaTabela = dadosFiltrados.map(element => {
-            return Object.values(element)
-        });
+        // const dadosParaTabela = dadosFiltrados.map(element => {
+        //     return Object.values(element)
+        // });
     
-        const table = d3.select('body')
-        .append('table')
+        // const table = d3.select('body')
+        // .append('table')
         
-        table.append("thead")
-        .append("tr")
-        .selectAll("th")
-        .data(dados.columns)
-        .enter().append("th")
-        .text(function(d) { return d; })
+        // table.append("thead")
+        // .append("tr")
+        // .selectAll("th")
+        // .data(dados.columns)
+        // .enter().append("th")
+        // .text(function(d) { return d; })
     
-        // data
-        table.append("tbody")
-        .selectAll("tr").data(dadosParaTabela)
-        .enter().append("tr")
-        .selectAll("td")
-        .data(function(d){return d;})
-        .enter().append("td")
-        .text(function(d){return d;})
+        // // data
+        // table.append("tbody")
+        // .selectAll("tr").data(dadosParaTabela)
+        // .enter().append("tr")
+        // .selectAll("td")
+        // .data(function(d){return d;})
+        // .enter().append("td")
+        // .text(function(d){return d;})
 
     }
 };
