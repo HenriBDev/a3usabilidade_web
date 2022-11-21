@@ -8,72 +8,86 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
+  <div id="cabecalho">
     <h1>Vendas de imóveis na cidade de São Paulo (2020)</h1>
+  </div>
 
-    <p id="bairroTitulo">Bairro:</p>
-    <div id="bairro1">
-      <input type="checkbox">bairro1</input>
-    </div>
-    <div id="bairro2">
-      <input type="checkbox">bairro2</input>
-    </div>
-    <div id="bairro3">
-      <input type="checkbox" id="bairro3">bairro3</input>
-    </div>
-    <div id="bairro4">
-      <input type="checkbox">bairro4</input>
-    </div>
-    <div id="bairro5">
-      <input type="checkbox">bairro5</input>
-    </div>
-    <div id="bairro6">
-      <input type="checkbox">bairro6</input>
-    </div>
-    <div id="bairro7">
-      <input type="checkbox">bairro7</input>
-    </div>
-    <div id="bairro8">
-      <input type="checkbox">bairro8</input>
-    </div>
-    <div id="bairro9">
-      <input type="checkbox">bairro9</input>
-    </div>
-    <div id="bairro10">
-      <input type="checkbox">bairro10</input>
-    </div>
-
-    <p id="logradouroTitulo">Logradouro:</p>
-    <div id="logradouro1">
-      <input type="checkbox">logradouro1</input>
-    </div>
-    <div id="logradouro2">
-      <input type="checkbox">logradouro2</input>
-    </div>
-    <div id="logradouro3">
-      <input type="checkbox">logradouro3</input>
-    </div>
-    <div id="logradouro4">
-      <input type="checkbox">logradouro4</input>
-    </div>
-    <div id="logradouro5">
-      <input type="checkbox">logradouro5</input>
-    </div>
-    <div id="logradouro6">
-      <input type="checkbox">logradouro6</input>
-    </div>
-    <div id="logradouro7">
-      <input type="checkbox">logradouro7</input>
-    </div>
-    <div id="logradouro8">
-      <input type="checkbox">logradouro8</input>
-    </div>
-    <div id="logradouro9">
-      <input type="checkbox">logradouro9</input>
-    </div>
-    <div id="logradouro10">
-      <input type="checkbox">logradouro10</input>
+  <div id="main">
+    <div id="containerBairros">
+      <p id="bairroTitulo">Bairro:</p>
+      <div id="bairro1">
+        <input type="checkbox">bairro1</input>
+      </div>
+      <div id="bairro2">
+        <input type="checkbox">bairro2</input>
+      </div>
+      <div id="bairro3">
+        <input type="checkbox" id="bairro3">bairro3</input>
+      </div>
+      <div id="bairro4">
+        <input type="checkbox">bairro4</input>
+      </div>
+      <div id="bairro5">
+        <input type="checkbox">bairro5</input>
+      </div>
+      <div id="bairro6">
+        <input type="checkbox">bairro6</input>
+      </div>
+      <div id="bairro7">
+        <input type="checkbox">bairro7</input>
+      </div>
+      <div id="bairro8">
+        <input type="checkbox">bairro8</input>
+      </div>
+      <div id="bairro9">
+        <input type="checkbox">bairro9</input>
+      </div>
+      <div id="bairro10">
+        <input type="checkbox">bairro10</input>
+      </div>
     </div>
 
+    <div id="containerLogradouros">
+      <p id="logradouroTitulo">Logradouro:</p>
+      <div id="logradouro1">
+        <input type="checkbox">logradouro1</input>
+      </div>
+      <div id="logradouro2">
+        <input type="checkbox">logradouro2</input>
+      </div>
+      <div id="logradouro3">
+        <input type="checkbox">logradouro3</input>
+      </div>
+      <div id="logradouro4">
+        <input type="checkbox">logradouro4</input>
+      </div>
+      <div id="logradouro5">
+        <input type="checkbox">logradouro5</input>
+      </div>
+      <div id="logradouro6">
+        <input type="checkbox">logradouro6</input>
+      </div>
+      <div id="logradouro7">
+        <input type="checkbox">logradouro7</input>
+      </div>
+      <div id="logradouro8">
+        <input type="checkbox">logradouro8</input>
+      </div>
+      <div id="logradouro9">
+        <input type="checkbox">logradouro9</input>
+      </div>
+      <div id="logradouro10">
+        <input type="checkbox">logradouro10</input>
+      </div>
+    </div>
+
+    <div id="containerGraphic">
+      <div id="my_dataviz"></div>
+    </div>
+  </div>
+  
+  <div id="rodape">
     <button type="button" id="area">Área</button>
     <button type="button" id="banheiro">Banheiros</button>
     <button type="button" id="quarto">Quartos</button>
@@ -81,8 +95,8 @@
     <button type="button" id="preco">Preço</button>
     Maior que:<input type="text" id="maiorQue">
     Menor que:<input type="text" id="menorQue">
+  </div>
 
-    <div id="my_dataviz"></div>
     <script type="module" src="js/lerDados.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <main>

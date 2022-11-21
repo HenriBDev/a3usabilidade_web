@@ -5,6 +5,7 @@
 }
 
 body{
+    height: 100%;
     background-color: grey;
 }
 
@@ -15,6 +16,10 @@ p{
 h1{
     color: black;
     text-align: center;
+}
+
+html{
+    height: 100%;
 }
 
 #search{
@@ -35,57 +40,34 @@ main section.graphicD3{
     box-sizing: border-box;
 }
 
-#logradouroTitulo{
+
+#cabecalho{
+    height: 15%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    position: relative; left: 150px; top: -198px;
 }
 
-#logradouro1{
+#main{
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    position: relative; left: 150px; top: -198px;
 }
 
-#logradouro2{
+#rodape{
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    position: relative; left: 150px; top: -198px;
 }
 
-#logradouro3{
-    align-items: center;
-    position: relative; left: 150px; top: -198px;
+/* #containerBairros{
+    height: 70%;
+    display: flex;
+    justify-content: center;
 }
+ */
+/* #containerLogradouros{
 
-#logradouro4{
-    align-items: center;
-    position: relative; left: 150px; top: -198px;
-}
-
-#logradouro5{
-    align-items: center;
-    position: relative; left: 150px; top: -198px;
-}
-
-#logradouro6{
-    align-items: center;
-    position: relative; left: 150px; top: -198px;
-}
-
-#logradouro7{
-    align-items: center;
-    position: relative; left: 150px; top: -198px;
-}
-
-#logradouro8{
-    align-items: center;
-    position: relative; left: 150px; top: -198px;
-}
-
-#logradouro9{
-    align-items: center;
-    position: relative; left: 150px; top: -198px;
-}
-
-#logradouro10{
-    align-items: center;
-    position: relative; left: 150px; top: -198px;
-}
+} */
