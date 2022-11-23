@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,162 +8,171 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 
-  <div id="cabecalho">
-    <h1>Vendas de imóveis na cidade de São Paulo (2020)</h1>
-  </div>
-
-  <div id="main">
-    <div id="containerBairros">
-      <p id="bairroTitulo">Bairro:</p>
-      <div id="bairro1">
-        <input type="checkbox">bairro1</input>
-      </div>
-      <div id="bairro2">
-        <input type="checkbox">bairro2</input>
-      </div>
-      <div id="bairro3">
-        <input type="checkbox" id="bairro3">bairro3</input>
-      </div>
-      <div id="bairro4">
-        <input type="checkbox">bairro4</input>
-      </div>
-      <div id="bairro5">
-        <input type="checkbox">bairro5</input>
-      </div>
-      <div id="bairro6">
-        <input type="checkbox">bairro6</input>
-      </div>
-      <div id="bairro7">
-        <input type="checkbox">bairro7</input>
-      </div>
-      <div id="bairro8">
-        <input type="checkbox">bairro8</input>
-      </div>
-      <div id="bairro9">
-        <input type="checkbox">bairro9</input>
-      </div>
-      <div id="bairro10">
-        <input type="checkbox">bairro10</input>
-      </div>
+    <div id="cabecalho">
+        <h1>Vendas de imóveis na cidade de São Paulo (2020)</h1>
     </div>
 
-    <div id="containerLogradouros">
-      <p id="logradouroTitulo">Logradouro:</p>
-      <div id="logradouro1">
-        <input type="checkbox">logradouro1</input>
-      </div>
-      <div id="logradouro2">
-        <input type="checkbox">logradouro2</input>
-      </div>
-      <div id="logradouro3">
-        <input type="checkbox">logradouro3</input>
-      </div>
-      <div id="logradouro4">
-        <input type="checkbox">logradouro4</input>
-      </div>
-      <div id="logradouro5">
-        <input type="checkbox">logradouro5</input>
-      </div>
-      <div id="logradouro6">
-        <input type="checkbox">logradouro6</input>
-      </div>
-      <div id="logradouro7">
-        <input type="checkbox">logradouro7</input>
-      </div>
-      <div id="logradouro8">
-        <input type="checkbox">logradouro8</input>
-      </div>
-      <div id="logradouro9">
-        <input type="checkbox">logradouro9</input>
-      </div>
-      <div id="logradouro10">
-        <input type="checkbox">logradouro10</input>
-      </div>
+    <div id="main">
+        <div id="containerBairros">
+            <p id="bairroTitulo">Bairro:</p>
+            <div id="bairro1">
+                <input type="checkbox">bairro1</input>
+            </div>
+            <div id="bairro2">
+                <input type="checkbox">bairro2</input>
+            </div>
+            <div id="bairro3">
+                <input type="checkbox" id="bairro3">bairro3</input>
+            </div>
+            <div id="bairro4">
+                <input type="checkbox">bairro4</input>
+            </div>
+            <div id="bairro5">
+                <input type="checkbox">bairro5</input>
+            </div>
+            <div id="bairro6">
+                <input type="checkbox">bairro6</input>
+            </div>
+            <div id="bairro7">
+                <input type="checkbox">bairro7</input>
+            </div>
+            <div id="bairro8">
+                <input type="checkbox">bairro8</input>
+            </div>
+            <div id="bairro9">
+                <input type="checkbox">bairro9</input>
+            </div>
+            <div id="bairro10">
+                <input type="checkbox">bairro10</input>
+            </div>
+        </div>
+
+        <div id="containerLogradouros">
+            <p id="logradouroTitulo">Logradouro:</p>
+            <div id="logradouro1">
+                <input type="checkbox">logradouro1</input>
+            </div>
+            <div id="logradouro2">
+                <input type="checkbox">logradouro2</input>
+            </div>
+            <div id="logradouro3">
+                <input type="checkbox">logradouro3</input>
+            </div>
+            <div id="logradouro4">
+                <input type="checkbox">logradouro4</input>
+            </div>
+            <div id="logradouro5">
+                <input type="checkbox">logradouro5</input>
+            </div>
+            <div id="logradouro6">
+                <input type="checkbox">logradouro6</input>
+            </div>
+            <div id="logradouro7">
+                <input type="checkbox">logradouro7</input>
+            </div>
+            <div id="logradouro8">
+                <input type="checkbox">logradouro8</input>
+            </div>
+            <div id="logradouro9">
+                <input type="checkbox">logradouro9</input>
+            </div>
+            <div id="logradouro10">
+                <input type="checkbox">logradouro10</input>
+            </div>
+        </div>
+
+        <div id="containerGraphic">
+            <div id="my_dataviz"></div>
+        </div>
     </div>
 
-    <div id="containerGraphic">
-      <div id="my_dataviz"></div>
+    <div id="rodape">
+        <button type="button" id="area">Área</button>
+        <button type="button" id="banheiro">Banheiros</button>
+        <button type="button" id="quarto">Quartos</button>
+        <button type="button" id="vaga">Vagas</button>
+        <button type="button" id="preco">Preço</button>
+        Maior que:<input type="text" id="maiorQue">
+        Menor que:<input type="text" id="menorQue">
     </div>
-  </div>
-  
-  <div id="rodape">
-    <button type="button" id="area">Área</button>
-    <button type="button" id="banheiro">Banheiros</button>
-    <button type="button" id="quarto">Quartos</button>
-    <button type="button" id="vaga">Vagas</button>
-    <button type="button" id="preco">Preço</button>
-    Maior que:<input type="text" id="maiorQue">
-    Menor que:<input type="text" id="menorQue">
-  </div>
-
-    <script type="module" src="js/lerDados.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
     <main>
-      <section>
-        <div class="graphicD3" style="height: 100%;width: 100%;text-align:center;">
-          <script>
-    
-              // set the dimensions and margins of the graph
-              var margin = {top: 20, right: 30, bottom: 40, left: 90},
-                  width = 460 - margin.left - margin.right,
-                  height = 400 - margin.top - margin.bottom;
-              
-              // append the svg object to the body of the page
-              var svg = d3.select("#my_dataviz")
+        <section>
+            <div class="graphicD3" style="height: 100%;width: 100%;text-align:center;"></div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                
+            // UPDATE
+            // $.ajax({
+            //     url: 'http://localhost:8080/insereDados',
+            //     type: 'POST',
+            //     data: JSON.stringify(dadosFiltrados)
+            // })
+
+            // set the dimensions and margins of the graph
+            var margin = { top: 20, right: 30, bottom: 40, left: 90 },
+                width = 460 - margin.left - margin.right,
+                height = 400 - margin.top - margin.bottom;
+
+            // append the svg object to the body of the page
+            var svg = d3.select("#my_dataviz")
                 .append("svg")
-                  .attr("width", width + margin.left + margin.right)
-                  .attr("height", height + margin.top + margin.bottom)
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
                 .append("g")
-                  .attr("transform",
-                        "translate(" + margin.left + "," + margin.top + ")");
-              
-              // Parse the Data
-              d3.csv("http://localhost:8080/assets/dadosFiltrados-teste.csv").then( function(data) {
-              
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            // Parse the Data
+            d3.csv("http://localhost:8080/assets/dadosFiltrados-teste.csv").then(function (data) {
+
                 // Add X axis
                 var x = d3.scaleLinear()
-                  .domain([0, 10])
-                  .range([ 0, width]);
+                    .domain([0, 10])
+                    .range([0, width]);
                 svg.append("g")
-                  .attr("transform", "translate(0," + height + ")")
-                  .call(d3.axisBottom(x))
-                  .selectAll("text")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(d3.axisBottom(x))
+                    .selectAll("text")
                     .attr("transform", "translate(-10,0)rotate(-45)")
                     .style("text-anchor", "end");
-              
+
                 // Y axis
                 var y = d3.scaleBand()
-                  .range([ 0, height ])
-                  .domain(data.map(function(d) { return d.Logradouro; }))
-                  .padding(.1);
+                    .range([0, height])
+                    .domain(data.map(function (d) { return d.Logradouro; }))
+                    .padding(.1);
                 svg.append("g")
-                  .call(d3.axisLeft(y))
-              
+                    .call(d3.axisLeft(y))
+
                 //Bars
                 svg.selectAll("myRect")
-                  .data(data)
-                  .enter()
-                  .append("rect")
-                  .attr("x", x(0) )
-                  .attr("y", function(d) { return y(d.Logradouro); })
-                  .attr("width", function(d) { return x(d['Máximo Banheiros']); })
-                  .attr("height", y.bandwidth() )
-                  .attr("fill", "#69b3a2")
-              
-              
-                  // .attr("x", function(d) { return x(d.Country); })
-                  // .attr("y", function(d) { return y(d.Value); })
-                  // .attr("width", x.bandwidth())
-                  // .attr("height", function(d) { return height - y(d.Value); })
-                  // .attr("fill", "#69b3a2")
-              
-              })
-              
-              </script>
-            </div>
-          </section>
-    </main>
-    </body>
+                    .data(data)
+                    .enter()
+                    .append("rect")
+                    .attr("x", x(0))
+                    .attr("y", function (d) { return y(d.Logradouro); })
+                    .attr("width", function (d) { return x(d['Máximo Banheiros']); })
+                    .attr("height", y.bandwidth())
+                    .attr("fill", "#69b3a2")
+
+
+                // .attr("x", function(d) { return x(d.Country); })
+                // .attr("y", function(d) { return y(d.Value); })
+                // .attr("width", x.bandwidth())
+                // .attr("height", function(d) { return height - y(d.Value); })
+                // .attr("fill", "#69b3a2")
+
+            })
+        })
+
+    </script>
+</body>
+
 </html>
