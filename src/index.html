@@ -11,168 +11,337 @@
 
 <body>
 
-    <div id="cabecalho">
+    <div id="fundoModal">
+        <div id="modal">
+            <h3 id="cabecalhoModal">Insira uma nova venda</h3>
+            <form id="formInserir" class="formCrud">
+                <p>
+                    <label for="Logradouro">Logradouro: </label>
+                    <input type="text" name="Logradouro" placeholder="Insira o Logradouro" class="campoCrudInserir">
+                </p>
+                <p>
+                    <label for="Bairro">Bairro: </label>
+                    <input type="text" name="Bairro" placeholder="Insira o Bairro" class="campoCrudInserir">
+                </p>
+                <p>
+                    <label for="Preço (R$)">Preço: </label>
+                    <input type="number" name="Preço (R$)" placeholder="Insira o Preço" class="campoCrudInserir">
+                </p>
+                <p>
+                    <label for="Máximo Área (m²)">Área: </label>
+                    <input type="number" name="Máximo Área (m²)" placeholder="Insira a Área" class="campoCrudInserir">
+                </p>
+                <p>
+                    <label for="Máximo Quartos">Quartos: </label>
+                    <input type="number" name="Máximo Quartos" placeholder="Insira o número de quartos"
+                        class="campoCrudInserir">
+                </p>
+                <p>
+                    <label for="Máximo Banheiros">Banheiros: </label>
+                    <input type="number" name="Máximo Banheiros" placeholder="Insira o número de banheiros"
+                        class="campoCrudInserir">
+                </p>
+                <p>
+                    <label for="Máximo Vagas">Vagas: </label>
+                    <input type="number" name="Máximo Vagas" placeholder="Insira o número de vagas"
+                        class="campoCrudInserir">
+                </p>
+            </form>
+            <form id="formAtualizar" class="formCrud">
+                <p>
+                    <label for="Logradouro">Logradouro: </label>
+                    <input type="text" name="Logradouro" placeholder="Insira o Logradouro" id="campoPesquisarLogradouro" class="campoCrudAtualizar">
+                    <input type="button" value="Pesquisar" id="pesquisarLogradouro">
+                </p>
+                <p>
+                    <label for="Bairro">Bairro: </label>
+                    <input type="text" name="Bairro" placeholder="Insira o Bairro" class="campoCrudAtualizar">
+                </p>
+                <p>
+                    <label for="Preço (R$)">Preço: </label>
+                    <input type="number" name="Preço (R$)" placeholder="Insira o Preço" class="campoCrudAtualizar">
+                </p>
+                <p>
+                    <label for="Máximo Área (m²)">Área: </label>
+                    <input type="number" name="Máximo Área (m²)" placeholder="Insira a Área" class="campoCrudAtualizar">
+                </p>
+                <p>
+                    <label for="Máximo Quartos">Quartos: </label>
+                    <input type="number" name="Máximo Quartos" placeholder="Insira o número de quartos"
+                        class="campoCrudAtualizar">
+                </p>
+                <p>
+                    <label for="Máximo Banheiros">Banheiros: </label>
+                    <input type="number" name="Máximo Banheiros" placeholder="Insira o número de banheiros"
+                        class="campoCrudAtualizar">
+                </p>
+                <p>
+                    <label for="Máximo Vagas">Vagas: </label>
+                    <input type="number" name="Máximo Vagas" placeholder="Insira o número de vagas"
+                        class="campoCrudAtualizar">
+                </p>
+            </form>
+            <form id="formDeletar" class="formCrud">
+                <p>
+                    <label for="Logradouro">Logradouro: </label>
+                    <input type="text" name="Logradouro" placeholder="Insira o Logradouro" id="campoCrudDeletar">
+                </p>
+            </form>
+            <div id="containerBotoesConcluirCrud">
+                <input type="button" id="concluirCrud">
+                <input type="button" value="Cancelar" id="cancelarCrud">
+            </div>
+        </div>
+    </div>
+
+    <header>
         <h1>Vendas de imóveis na cidade de São Paulo (2020)</h1>
-    </div>
-
-    <div id="main">
-        <div id="containerBairros">
-            <p id="bairroTitulo">Bairro:</p>
-            <div id="bairro1">
-                <input type="checkbox">bairro1</input>
-            </div>
-            <div id="bairro2">
-                <input type="checkbox">bairro2</input>
-            </div>
-            <div id="bairro3">
-                <input type="checkbox" id="bairro3">bairro3</input>
-            </div>
-            <div id="bairro4">
-                <input type="checkbox">bairro4</input>
-            </div>
-            <div id="bairro5">
-                <input type="checkbox">bairro5</input>
-            </div>
-            <div id="bairro6">
-                <input type="checkbox">bairro6</input>
-            </div>
-            <div id="bairro7">
-                <input type="checkbox">bairro7</input>
-            </div>
-            <div id="bairro8">
-                <input type="checkbox">bairro8</input>
-            </div>
-            <div id="bairro9">
-                <input type="checkbox">bairro9</input>
-            </div>
-            <div id="bairro10">
-                <input type="checkbox">bairro10</input>
-            </div>
+        <div id="containerBotoesCrud">
+            <input type="button" id="botaoInserir" class="botoesCrud" value="Inserir venda">
+            <input type="button" id="botaoAtualizar" class="botoesCrud" value="Atualizar venda">
+            <input type="button" id="botaoDeletar" class="botoesCrud" value="Deletar venda">
         </div>
+    </header>
 
-        <div id="containerLogradouros">
-            <p id="logradouroTitulo">Logradouro:</p>
-            <div id="logradouro1">
-                <input type="checkbox">logradouro1</input>
-            </div>
-            <div id="logradouro2">
-                <input type="checkbox">logradouro2</input>
-            </div>
-            <div id="logradouro3">
-                <input type="checkbox">logradouro3</input>
-            </div>
-            <div id="logradouro4">
-                <input type="checkbox">logradouro4</input>
-            </div>
-            <div id="logradouro5">
-                <input type="checkbox">logradouro5</input>
-            </div>
-            <div id="logradouro6">
-                <input type="checkbox">logradouro6</input>
-            </div>
-            <div id="logradouro7">
-                <input type="checkbox">logradouro7</input>
-            </div>
-            <div id="logradouro8">
-                <input type="checkbox">logradouro8</input>
-            </div>
-            <div id="logradouro9">
-                <input type="checkbox">logradouro9</input>
-            </div>
-            <div id="logradouro10">
-                <input type="checkbox">logradouro10</input>
-            </div>
-        </div>
-
-        <div id="containerGraphic">
-            <div id="my_dataviz"></div>
-        </div>
-    </div>
-
-    <div id="rodape">
-        <button type="button" id="area">Área</button>
-        <button type="button" id="banheiro">Banheiros</button>
-        <button type="button" id="quarto">Quartos</button>
-        <button type="button" id="vaga">Vagas</button>
-        <button type="button" id="preco">Preço</button>
-        Maior que:<input type="text" id="maiorQue">
-        Menor que:<input type="text" id="menorQue">
-    </div>
     <main>
-        <section>
-            <div class="graphicD3" style="height: 100%;width: 100%;text-align:center;"></div>
-        </section>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script>
-        $(document).ready(function () {
-                
-            // UPDATE
-            // $.ajax({
-            //     url: 'http://localhost:8080/insereDados',
-            //     type: 'POST',
-            //     data: JSON.stringify(dadosFiltrados)
-            // })
+        <div id="containerFiltros">
+            <div class="containerFiltro">
+                <h3 class="filtroTitulo">Bairro:</h3>
+                <div id="valoresFiltroBairro" class="valoresFiltro"></div>
+            </div>
 
-            // set the dimensions and margins of the graph
-            var margin = { top: 20, right: 30, bottom: 40, left: 90 },
-                width = 460 - margin.left - margin.right,
-                height = 400 - margin.top - margin.bottom;
+            <div class="containerFiltro">
+                <h3 class="filtroTitulo">Logradouro:</h3>
+                <div id="valoresFiltroLogradouro" class="valoresFiltro"></div>
+            </div>
+        </div>
 
-            // append the svg object to the body of the page
-            var svg = d3.select("#my_dataviz")
-                .append("svg")
-                .attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
-                .append("g")
-                .attr("transform",
-                    "translate(" + margin.left + "," + margin.top + ")");
+        <div id="containerGrafico">
+            <div id="grafico"></div>
+            <div id="containerBotoes">
+                <p><input type="radio" name="filtroValores" value="Máximo Área (m²)">&nbsp; Área</p>
+                <p><input type="radio" name="filtroValores" value="Máximo Banheiros">&nbsp; Banheiros</p>
+                <p><input type="radio" name="filtroValores" value="Máximo Quartos">&nbsp; Quartos</p>
+                <p><input type="radio" name="filtroValores" value="Máximo Vagas">&nbsp; Vagas</p>
+                <p><input type="radio" name="filtroValores" value="Preço (R$)" checked>&nbsp; Preço</p>
+            </div>
+        </div>
+        </div>
 
-            // Parse the Data
-            d3.csv("http://localhost:8080/assets/dadosFiltrados-teste.csv").then(function (data) {
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script>
+            $(document).ready(function () {
 
-                // Add X axis
-                var x = d3.scaleLinear()
-                    .domain([0, 10])
-                    .range([0, width]);
-                svg.append("g")
-                    .attr("transform", "translate(0," + height + ")")
-                    .call(d3.axisBottom(x))
-                    .selectAll("text")
-                    .attr("transform", "translate(-10,0)rotate(-45)")
-                    .style("text-anchor", "end");
+                const URL_RAIZ = 'http://localhost:8080/'
+                let baseDados;
+                lerDados()
 
-                // Y axis
-                var y = d3.scaleBand()
-                    .range([0, height])
-                    .domain(data.map(function (d) { return d.Logradouro; }))
-                    .padding(.1);
-                svg.append("g")
-                    .call(d3.axisLeft(y))
+                $('#pesquisarLogradouro').on('click', function(){
+                    let dados = baseDados;
+                    let campoEncontrado = dados.filter(venda => venda.Logradouro == $('#campoPesquisarLogradouro').val())
+                    if(campoEncontrado.length > 0){
+                        Object.keys(campoEncontrado[0]).forEach(nomeCampo => {
+                            $('input[name="' + nomeCampo + '"].campoCrudAtualizar').val(campoEncontrado[0][nomeCampo])
+                        });
+                    }
+                })
 
-                //Bars
-                svg.selectAll("myRect")
-                    .data(data)
-                    .enter()
-                    .append("rect")
-                    .attr("x", x(0))
-                    .attr("y", function (d) { return y(d.Logradouro); })
-                    .attr("width", function (d) { return x(d['Máximo Banheiros']); })
-                    .attr("height", y.bandwidth())
-                    .attr("fill", "#69b3a2")
+                $(".botoesCrud").on('click', function () {
+                    let opCrud = $(this).attr('id').split('botao')[1];
+                    $("#fundoModal").css('display', 'flex');
+                    $('#modal').css('display', 'flex');
+                    $('#concluirCrud').val(opCrud);
+                    let cabecalhoModal;
+                    switch (opCrud) {
+                        case 'Inserir':
+                            cabecalhoModal = 'Insira uma nova venda';
+                            break;
+                        case 'Atualizar':
+                            cabecalhoModal = 'Atualize uma venda por Logradouro';
+                            break;
+                        case 'Deletar':
+                            cabecalhoModal = 'Delete uma venda por Logradouro';
+                            break;
+                    }
+                    $('#cabecalhoModal').html(cabecalhoModal);
+                    $(".formCrud").css('display', 'none');
+                    $("#form" + opCrud).css("display", 'flex');
+                });
+
+                $("#concluirCrud").on("click", function () {
+                    let dados = [{}];
+                    switch ($(this).val()) {
+                        case "Inserir":
+                            $(".campoCrudInserir").each(function () {
+                                dados[0][$(this).attr('name')] = $(this).val()
+                            })
+                            $.ajax({
+                                url: URL_RAIZ + 'inserirDados',
+                                type: 'POST',
+                                data: JSON.stringify(dados),
+                                success(retorno) {
+                                    alert('Venda inserida com sucesso!')
+                                    lerDados()
+                                }
+                            })
+                            break;
+                        case "Atualizar":
+                            $(".campoCrudAtualizar").each(function () {
+                                dados[0][$(this).attr('name')] = $(this).val()
+                            })
+                            $.ajax({
+                                url: URL_RAIZ + 'atualizarDados',
+                                type: 'POST',
+                                data: JSON.stringify(dados),
+                                success() {
+                                    alert('Venda atualizada com sucesso!')
+                                    lerDados()
+                                }
+                            })
+                            break;
+                        case "Deletar":
+                            dados = $("#campoCrudDeletar").val()
+                            $.ajax({
+                                url: URL_RAIZ + 'deletarDados',
+                                type: 'POST',
+                                data: dados,
+                                success() {
+                                    alert('Venda deletada com sucesso!')
+                                    lerDados()
+                                }
+                            })
+                        break;
+                    }
+                });
+
+                $('#cancelarCrud').on("click", function () {
+                    $(this).parent().parent().css('display', 'none');
+                    $('#fundoModal').css("display", 'none');
+                });
+
+                function lerDados() {
+                    $.ajax({
+                        url: URL_RAIZ + 'lerDados',
+                        type: 'POST',
+                        dadosType: 'json',
+                        success: function (dados) {
+                            baseDados = dados;
+                            if ($('#valoresFiltroBairro').children().length > 0) {
+                                $('#valoresFiltroBairro').empty()
+                            }
+                            if ($('#valoresFiltroLogradouro').children().length > 0) {
+                                $('#valoresFiltroLogradouro').empty()
+                            }
+                            dados.forEach(element => {
+                                $('#valoresFiltroBairro').append('<p><input type="checkbox" class="checkboxBairro" value="' + element.Bairro + '">&nbsp;' +
+                                    element.Bairro + "</p>")
+                                $('#valoresFiltroLogradouro').append('<p><input type="checkbox" class="checkboxLogradouro" value="' + element.Logradouro + '">&nbsp;' +
+                                    element.Logradouro + "</p>")
+                            });
+                            let dadosCortados = dados.filter((element, index) => {
+                                if(index < 5){
+                                    return true
+                                }
+                                return false
+                            });
+                            for (logradouro of dadosCortados.map(linha => linha.Logradouro)) {
+                                $('input[value="' + logradouro + '"]').prop('checked', true)
+                            }
+                            gerarTabela();
+                        }
+                    })
+                }
+
+                $('body').on('click', 'input[type="checkbox"]', function () {
+                    if ($(this)[0].classList[0].split('checkbox')[1] == 'Logradouro') {
+                        $('.checkboxBairro').prop('checked', false)
+                    } else {
+                        $('.checkboxLogradouro').prop('checked', false)
+                    }
+                    gerarTabela()
+                })
+
+                $('input[type="radio"]').on('change', function () {
+                    gerarTabela()
+                })
+
+                function gerarTabela() {
+
+                    let dados = baseDados;
+                    let enderecoFiltro;
+                    let valoresFiltro = []
+                    $(".checkboxLogradouro:checked").each(function () {
+                        valoresFiltro.push($(this).attr('value'))
+                        enderecoFiltro = 'Logradouro'
+                    })
+                    $(".checkboxBairro:checked").each(function () {
+                        valoresFiltro.push($(this).attr('value'))
+                        enderecoFiltro = 'Bairro'
+                    })
+                    if (valoresFiltro.length > 0) {
+
+                        dados = dados.filter(linha => {
+                            if (valoresFiltro.includes(linha[enderecoFiltro])) {
+                                return linha
+                            }
+                        })
+                        if ($('#grafico').children().length > 0) {
+                            $("#grafico").empty()
+                        }
+                        var margin = {
+                            top: $("#grafico").css('height').replace('px', '') * 0.2,
+                            right: $("#grafico").css('width').replace('px', '') * 0.2,
+                            bottom: $("#grafico").css('height').replace('px', '') * 0.2,
+                            left: $("#grafico").css('width').replace('px', '') * 0.2
+                        },
+                            width = $("#grafico").css('width').replace('px', '') - margin.left - margin.right,
+                            height = $("#grafico").css('height').replace('px', '') - margin.top - margin.bottom;
+
+                        // append the svg object to the body of the page
+                        var svg = d3.select("#grafico")
+                            .append("svg")
+                            .attr("width", width + margin.left + margin.right)
+                            .attr("height", height + margin.top + margin.bottom)
+                            .append("g")
+                            .attr("transform",
+                                "translate(" + margin.left + "," + margin.top + ")");
 
 
-                // .attr("x", function(d) { return x(d.Country); })
-                // .attr("y", function(d) { return y(d.Value); })
-                // .attr("width", x.bandwidth())
-                // .attr("height", function(d) { return height - y(d.Value); })
-                // .attr("fill", "#69b3a2")
+                        // Add X axis
+                        var x = d3.scaleLinear()
+                            .domain([0, d3.max(dados.map(linha => linha[$('input[type="radio"]:checked').val()]))])
+                            .range([0, width]);
+                        svg.append("g")
+                            .attr("transform", "translate(0," + height + ")")
+                            .call(d3.axisBottom(x))
+                            .selectAll("text")
+                            .attr("transform", "translate(-10,0)rotate(-45)")
+                            .style("text-anchor", "end");
 
+                        // Y axis
+                        var y = d3.scaleBand()
+                            .range([0, height])
+                            .domain(dados.map(function (d) { return d[enderecoFiltro]; }))
+                            .padding(.1);
+                        svg.append("g")
+                            .call(d3.axisLeft(y))
+
+                        //Bars
+                        svg.selectAll("myRect")
+                            .data(dados)
+                            .enter()
+                            .append("rect")
+                            .attr("x", x(0))
+                            .attr("y", function (d) { return y(d[enderecoFiltro]); })
+                            .attr("width", function (d) { return x(d[$('input[type="radio"]:checked').val()]); })
+                            .attr("height", y.bandwidth())
+                            .attr("fill", "#69b3a2")
+                    }
+                }
             })
-        })
-
-    </script>
+        </script>
 </body>
 
 </html>

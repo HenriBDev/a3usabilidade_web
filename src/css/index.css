@@ -2,24 +2,117 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI';
+    z-index: 1;
 }
 
-body{
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+main{
+    height: 85%;
+    display: flex;
+}
+
+footer{
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fundoModal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+}
+
+#modal{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 20px;
+    padding: 2.5%;
+}
+
+#modal h3{
+    height: 10%;
+}
+
+.formCrud{
+    display: none;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    gap: 5%
+}
+
+#containerBotoesConcluirCrud{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+#containerBotoesCrud{
+    justify-content: space-around;
+}
+
+#containerFiltros{
     height: 100%;
-    background-color: grey;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
 }
 
-p{
-    color: black;
+.filtroTitulo{
+    margin-bottom: 1%;
 }
 
-h1{
-    color: black;
-    text-align: center;
-}
-
-html{
+.containerFiltro{
     height: 100%;
+    width: 30%;
+}
+
+.valoresFiltro{
+    height: 90%;
+    overflow-y: scroll;
+}
+
+#containerGrafico{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#grafico, #containerBotoes, #containerFiltroValor{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#grafico{
+    height: 80%;
 }
 
 #search{
@@ -31,43 +124,3 @@ html{
     align-items: center;
     position: relative; left: -140px; top: 50px;
 }
-
-main section.graphicD3{
-    display:table;
-    width: 40%;
-    margin-top: 0px;
-    padding: 0px 0 0 0; /*set left/right padding according to needs*/
-    box-sizing: border-box;
-}
-
-
-#cabecalho{
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#main{
-    height: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#rodape{
-    height: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* #containerBairros{
-    height: 70%;
-    display: flex;
-    justify-content: center;
-}
- */
-/* #containerLogradouros{
-
-} */
