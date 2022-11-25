@@ -4,7 +4,7 @@
   "description": "A3 de Usabilidade, Desenvolvimento Web, Mobile e Jogos",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gilberto de Melo, Henrique Barbosa e Marcus Gustavo",
